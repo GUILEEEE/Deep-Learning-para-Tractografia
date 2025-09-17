@@ -39,7 +39,8 @@ Este proyecto explora el uso de **deep learning** para la reconstrucción de tra
 - Se generaron tractogramas de hasta **100,000 streamlines** utilizando el modelo entrenado.
 - Limitaciones actuales:
   - Presencia de falsos positivos a nivel local.
-  - Ausencia de una rutina de selección de tractos posterior al tracking.
+  - ![Validacion y tractograma final](assets/tracto_collage.png)
+
 
 ---
 
