@@ -20,10 +20,10 @@ Este proyecto explora el uso de **deep learning** para la reconstrucción de tra
 
 4. **Tracking**
    - El modelo predice la dirección de propagación de cada nuevo punto de un streamline basado en la ecuación de propagación dada por:
-     $$
-     \mathbf{p}_{nuevo} = \mathbf{p}_{actual} + a \mathbf{d},
-     $$
-     donde $\mathbf{p}_{nuevo}$ es el punto nuevo a actualizar, $\mathbf{p}_{actual}$ el punto actual centro de la vecindad, $a$ el tamaño de paso y $\mathbf{d}$ la dirección estimada por el modelo preentrenado.
+
+     ![ecuación](https://latex.codecogs.com/png.latex?\mathbf{p}_{nuevo}=\mathbf{p}_{actual}+a\mathbf{d})
+
+     donde `p_nuevo` es el punto nuevo a actualizar, `p_actual` el punto actual centro de la vecindad, `a` el tamaño de paso y `d` la dirección estimada por el modelo preentrenado.
    - Se implementó un algoritmo de tracking que actualiza posiciones siguiendo las predicciones de un modelo MLP que extrae una vecindad y dirección previa del punto dado.
 
 ---
