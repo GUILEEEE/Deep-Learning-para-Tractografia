@@ -19,7 +19,11 @@ Este proyecto explora el uso de **deep learning** para la reconstrucción de tra
    - La arquitectura incluye capas lineales, funciones de activación ReLU y dropout para evitar sobreajuste.
 
 4. **Tracking**
-   - El modelo predice la dirección de propagación de cada nuevo punto de un streamline basado en la ecuación de propagación dada por: $$ \mathbf{p}_{nuevo} = \mathbf{p}_{actual} + a \mathbf{d}$$, donde $\mathbf{p}_{nuevo}$ es el punto nuevo a actualizar, $\mathbf{p}_{actual}$ el punto actual centro de la vecindad, $a$ el tamaño de paso y $\mathbf{d}$ la dirección estimada por el modelo preentrenado.
+   - El modelo predice la dirección de propagación de cada nuevo punto de un streamline basado en la ecuación de propagación dada por:
+     $$
+     \mathbf{p}_{nuevo} = \mathbf{p}_{actual} + a \mathbf{d},
+     $$
+     donde $\mathbf{p}_{nuevo}$ es el punto nuevo a actualizar, $\mathbf{p}_{actual}$ el punto actual centro de la vecindad, $a$ el tamaño de paso y $\mathbf{d}$ la dirección estimada por el modelo preentrenado.
    - Se implementó un algoritmo de tracking que actualiza posiciones siguiendo las predicciones de un modelo MLP que extrae una vecindad y dirección previa del punto dado.
 
 ---
