@@ -7,9 +7,9 @@ Este proyecto explora el uso de **deep learning** para la reconstrucción de tra
 ## ⚙️ Metodología
 
 1. **Preprocesamiento de datos**
-   - Se utilizaron dos archivos: ismrm2015_withReversed__peaks.nii.gz y 2_filtered_loops.trk. Dichos datos fueron preprocesados y curado por expertos en neuroimagen y fueron obtenidos de la [base de datos de Tractometer](https://tractometer.org/ismrm2015/processed_data/).
+   - Se utilizaron dos archivos: `ismrm2015_withReversed__peaks.nii.gz` y `2_filtered_loops.trk`. Dichos datos fueron preprocesados y curados por expertos en neuroimagen y fueron obtenidos de la [base de datos de Tractometer](https://tractometer.org/ismrm2015/processed_data/).
 .
-   - Del archivo ismrm2015_withReversed__peaks.nii.gz se obtuvieron se generaron 100 mil vecindades cúbicas de **picos de funciones de distribución de orientación (fODFs)** centradas en un punto y de los streamlines del archivo 2_filtered_loops.trk se extrajeron los vectores de direccion previa y actual en dicho punto.
+   - Del archivo `ismrm2015_withReversed__peaks.nii.gz` se obtuvieron se generaron 100 mil vecindades cúbicas de **picos de funciones de distribución de orientación (fODFs)** centradas en un punto y de los streamlines del archivo `2_filtered_loops.trk` se extrajeron los vectores de direccion previa y actual en dicho punto.
 
 2. **Generación de datos de entrenamiento**
    - Cada muestra de entrenamiento corresponde a una tupla `(vecindad+direccion_previa, dirección_actual)` extraída de los picos de ODF y de los streamlines del tractograma validado por expertos.
